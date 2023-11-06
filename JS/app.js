@@ -32,7 +32,7 @@ const ImpuestoGanancias = 0.45;
 const bienespersonales = 0.25;
 
 const impuestopais = 0.30 ;
-
+let monto;
 let euro = 390.66; 
 let dolar = 365.50;
 
@@ -67,7 +67,7 @@ if (monedavalida){
 switch (cambio){
 case "euro":
 
-let monto;
+
 do {
   monto = prompt("Ingresa el valor del producto que deseas convertir");
 } while (isNaN(monto));
@@ -78,8 +78,8 @@ if (!isNaN(monto)) {
   let extra = monto * impuestos;
   let total = extra + monto;
   let totalpesos = total * euro;
-  alert("El total a pagar con impuestos incluidos es de\n$" + total + "\nEN PESOS:\n$" + totalpesos);
-  document.write ("<h3> El total a pagar con impuestos incluidos es de\n <br>EUR $" + total + "\n <br>EN PESOS:\n$" + totalpesos + " </h3>" )
+  alert("El total a pagar con impuestos incluidos es de\nEN PESOS:\n$" + totalpesos);
+  document.write ("<h3> El total a pagar con impuestos incluidos es de\n <br>EN PESOS:\n$" + totalpesos + " </h3>" )
   break;
 } else {
   alert("La entrada no es un número válido.");
@@ -98,8 +98,8 @@ if (!isNaN(monto)) {
   let extra = monto * impuestos;
   let total = extra + monto;
   let totalpesos = total * euro;
-  alert("El total a pagar con impuestos incluidos es de\n$" + total + "\nEN PESOS:\n$" + totalpesos);
-  document.write ("<h3> El total a pagar con impuestos incluidos es de\n <br>USD $" + total + "\n <br>EN PESOS:\n$" + totalpesos + " </h3>" )
+  alert("El total a pagar con impuestos incluidos es de\nEN PESOS:\n$" + totalpesos);
+  document.write ("<h3> El total a pagar con impuestos incluidos es de\n <br>EN PESOS:\n$" + totalpesos + " </h3>" )
   break;
 } else {
   alert("La entrada no es un número válido.");
